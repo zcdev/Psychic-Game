@@ -25,6 +25,9 @@ document.onkeyup = function (event) {
     // Get user's input.
     var userGuess = event.key.toLowerCase();
 
+    // Accepting only lowercase alphabetic letter from input
+    if (/^[a-z]$/.test(userGuess)) {
+
     // If user's input letter doesn't exist, store it
     if (!userGuessesSoFar.includes(userGuess)) {
         userGuessesSoFar.push(userGuess);
@@ -48,6 +51,8 @@ document.onkeyup = function (event) {
             }
         }
     }
+
+   }
 }
 
 // The Win Heart animation
