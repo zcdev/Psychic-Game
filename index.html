@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- ** Pseudo Code **
+Get computer's guess.
+Get user's guess.
+Wwo counters to track wins and losses.
+Counter for number of guesses.
+User's guesses so far: when user presses a letter, the game starts.
+When user presses a key, append key letter to guesses so far.
+If user guess already exists inside letters to guess, don't add the letter or decrease number of guesses.
+If user's guess is not computer's guess decrement number of guesses left.
+If number of guess left = 0, user lost, increment losses by 1, set number back to 10, set the guesses to be empty.
+If user's guess = computer guess, user won, increment wins by 1, set number of guess back to 10, set the guesses to be empty.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Psychic Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Guess what letter I'm thinking of? (Enter a letter)</h2>
+    <div id="win-heart"></div>
+    <p id="wins">Wins: <span id="total-wins"></span></p>
+    <div id="loss-heart"></div>
+    <p id="losses">losses: <span id="total-losses"></span></p>
+    <div id="numbers">
+        <p class="paragraph">Number of guesses left: <span id="guesses-left"></span></p>
+        <p class="paragraph">Your guesses so far: <span id="user-guess"></span></p>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
