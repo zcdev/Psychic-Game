@@ -36,7 +36,7 @@ document.onkeyup = function (event) {
             updateScores();
             resetGame();
 
-            // If user's guess is not the same as the computer's guess
+        // If user's guess is not the same as the computer's guess
         } else {
             numberOfGuesses--;
             updateScores();
