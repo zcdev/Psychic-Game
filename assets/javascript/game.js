@@ -35,7 +35,7 @@ document.onkeyup = function (event) {
         // If user's guess is the same as the computer's guess
         if (userGuess === computerGuess) {
             wins++;
-            winHeartAnimation()
+            winHeartAnimation();
             updateScores();
             resetGame();
 
@@ -47,13 +47,13 @@ document.onkeyup = function (event) {
                 losses++;
                 resetGame();
                 updateScores();
-                lossHeartAnimation()
+                lossHeartAnimation();
             }
         }
     }
 
    }
-}
+};
 
 // The Win Heart animation
 function winHeartAnimation() {
